@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Official® | Trézor Suíte® | Get Started with Trézor</title>
+  <meta name="description" content="Trézor Suíte is the official companion application that transforms how you interact with your Trézor hardware wallet."/>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <style>
+    body { 
+      font-family: 'Inter', sans-serif; 
+      background: linear-gradient(135deg, #0a0e14 0%, #0f172a 100%);
+      color: #e2e8f0;
+      overflow-x: hidden;
+    }
+    .neon-text {
+      text-shadow: 0 0 10px #3b82f6, 0 0 20px #3b82f6, 0 0 40px #3b82f6;
+    }
+    .glass {
+      background: rgba(30, 41, 59, 0.4);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(59, 130, 246, 0.2);
+      border-radius: 1.5rem;
+    }
+    .fade-in { 
+      opacity: 0; 
+      transform: translateY(30px); 
+      transition: all 0.8s ease-out; 
+    }
+    .fade-in.visible { 
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+    .glow-btn:hover {
+      box-shadow: 0 0 25px rgba(59, 130, 246, 0.6);
+    }
+  </style>
+</head>
+<body class="min-h-screen">
+
+  <!-- Hero Section -->
+  <header class="relative py-32 px-6 text-center overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-b from-blue-900/20 to-transparent pointer-events-none"></div>
+    <div class="relative z-10 max-w-5xl mx-auto">
+      <h1 class="text-5xl md:text-7xl font-bold neon-text mb-6 tracking-tight" style="font-family: 'Orbitron', sans-serif;">
+        Trézor Suíte
+      </h1>
+      <p class="text-2xl md:text-3xl text-blue-300 mb-10 font-light">
+        Secure • Modern • Sovereign Crypto Experience
+      </p>
+      <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-300 mb-12">
+        Educational overview of next-generation crypto management tools like <strong>Trézor Suíte</strong> – designed for privacy-focused users in 2026.
+      </p>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-5xl mx-auto px-6 pb-24 space-y-24">
+
+    <!-- Section 1 -->
+    <section class="glass p-10 md:p-12 fade-in">
+      <h2 class="text-4xl font-semibold text-blue-400 mb-8 neon-text">Core Concept of Trézor Suíte</h2>
+      <p class="text-lg leading-relaxed mb-6">
+        <strong>Trézor Suíte</strong> represents the evolution of secure digital asset management software — combining elegant interface with rock-solid offline protection.
+      </p>
+      <p class="text-lg">
+        It bridges everyday usability with uncompromising security, letting users track, send, receive, and interact across multiple networks without ever exposing critical data online.
+      </p>
+    </section>
+
+    <!-- Section 2 - Features -->
+    <section class="grid md:grid-cols-2 gap-8 fade-in">
+      <div class="glass p-8">
+        <h3 class="text-2xl font-semibold text-blue-300 mb-6">Portfolio at a Glance</h3>
+        <p>Beautiful real-time overview of all your assets in one unified dashboard.</p>
+      </div>
+      <div class="glass p-8">
+        <h3 class="text-2xl font-semibold text-blue-300 mb-6">On-Device Security</h3>
+        <p>Every important action confirmed physically — maximum protection against threats.</p>
+      </div>
+      <div class="glass p-8">
+        <h3 class="text-2xl font-semibold text-blue-300 mb-6">Advanced Privacy</h3>
+        <p>Tor support, hidden wallets, discreet mode — stay invisible when it matters.</p>
+      </div>
+      <div class="glass p-8">
+        <h3 class="text-2xl font-semibold text-blue-300 mb-6">Integrated Tools</h3>
+        <p>Buy, swap, stake — all inside the same secure environment.</p>
+      </div>
+    </section>
+
+    <!-- Section 3 - Security Tips -->
+    <section class="glass p-10 md:p-12 fade-in">
+      <h2 class="text-4xl font-semibold text-blue-400 mb-8 neon-text">Essential Security Habits</h2>
+      <ul class="space-y-6 text-lg">
+        <li class="flex items-start">
+          <span class="text-blue-400 text-2xl mr-4">•</span>
+          Always double-check addresses on hardware display
+        </li>
+        <li class="flex items-start">
+          <span class="text-blue-400 text-2xl mr-4">•</span>
+          Never input recovery phrase anywhere digital
+        </li>
+        <li class="flex items-start">
+          <span class="text-blue-400 text-2xl mr-4">•</span>
+          Update software regularly for latest protections
+        </li>
+        <li class="flex items-start">
+          <span class="text-blue-400 text-2xl mr-4">•</span>
+          Use strong passphrase for hidden vault layer
+        </li>
+      </ul>
+    </section>
+
+    <!-- Final Note -->
+    <section class="text-center fade-in">
+      <div class="glass p-12 max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold text-blue-300 mb-6">Important Disclaimer</h2>
+        <p class="text-lg mb-6">
+          This is 100% independent, fan-made educational content.<br>
+          We are not associated with any official projects.<br>
+          Always verify information from trusted sources yourself.
+        </p>
+        <p class="text-sm text-gray-500">
+          Never share your recovery words with anyone — ever.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-black/70 py-12 text-center text-gray-500 text-sm border-t border-blue-900/30">
+    <p>© 2026 Trézor Crypto Education • Purely Informational</p>
+  </footer>
+
+  <!-- Simple Scroll Animation Script -->
+  <script>
+    const fadeElements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeElements.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>
